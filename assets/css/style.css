@@ -605,7 +605,6 @@ hr {
 .social__item {
     width: 55px;
     height: 55px;
-/*    padding: 12px 10px;*/
     
     background-color: #fce38a;
     border-right: 1px solid #f38181;
@@ -613,11 +612,19 @@ hr {
     font-size: 30px;
     text-decoration: none;
     color: #f38181;
-    line-height: 1;
+    line-height: 2;
+    
+    transition: background .1s linear, color .1s linear;
 }
 
+.social__item:last-child {
+    border-right: 0;
+}
 
-
+.social__item:hover {
+    background-color: #f38181;
+    color: #fff;
+}
 
 
 
