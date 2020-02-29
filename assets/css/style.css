@@ -652,10 +652,34 @@ hr {
 .logos {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 
+/*Works*/
 
+.works {
+    display: flex;
+}
+
+.works__col {
+    flex: 1 1 0;
+}
+
+.works__item {
+    position: relative;
+    
+    background: linear-gradient(to bottom, 
+    #f38181, #fce38a);
+}
+
+.works__item:hover .works__image {
+    opacity: .1;
+}
+
+.works__image {
+    transition: opacity .1s linear;
+}
 
 
 
