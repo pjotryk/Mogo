@@ -286,20 +286,22 @@ hr {
 
 .card__item {
     width: 380px;
+}
+
+.card__inner {
     position: relative;
-    
     background-color: #95e1d3;
 }
 
-.card__item:hover .card__img {
+.card__inner:hover .card__img {
     transform: translate3d(-10px, -10px, 0);
 }
 
-.card__item:hover .card__text {
+.card__inner:hover .card__text {
     opacity: 1;
 }
 
-.card__item:hover .card__img img {
+.card__inner:hover .card__img img {
     opacity: .1;
 }
 
@@ -333,6 +335,26 @@ hr {
     
     transition: transform .2s linear;
 }
+
+.card__info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card__name {
+    font-size: 14px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.card__prof {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15px;
+    color: #999;
+}
+
 
 /*Statistics*/
 .statistics {
@@ -625,6 +647,15 @@ hr {
     background-color: #f38181;
     color: #fff;
 }
+
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
 
 
 
