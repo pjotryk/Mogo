@@ -480,6 +480,7 @@ hr {
 
 .devices__item {
     display: block;
+    max-width: 100%;
 }
 
 .devices__item--iphone {
@@ -492,10 +493,19 @@ hr {
 /*We do*/
 .wedo {
     display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
 }
 
 .wedo__item {
     width: 50%;
+    padding: 0 15px;
+}
+
+.wedo__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /*Accordion*/
@@ -584,6 +594,7 @@ hr {
 }
 
 .reviews__photo {
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
@@ -684,6 +695,17 @@ hr {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 -15px;
+}
+
+.logos__item {
+    padding: 0 15px;
+}
+
+.logos__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -1180,7 +1202,7 @@ hr {
 }
 
 /*    Intro*/
-@media (max-width: 1200px) {
+@media (max-width: 1230px) {
     .intro__suptitle {
         font-size: 52px;
     }
@@ -1188,6 +1210,13 @@ hr {
     .intro__title {
         font-size: 120px;
     }
+    
+/*Reviews*/
+    .reviews__text {
+        font-size: 20px;
+    }
+    
+    
 }
     
 @media (max-width: 990px) {
@@ -1226,6 +1255,20 @@ hr {
     .services__item--border  {
         border-bottom: 0;
     }
+    
+/*Reviews*/
+    .reviews__photo {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .reviews__item {
+        padding-left: 175px;
+    }
+    
+    .reviews {
+        padding: 0 60px;
+     }
 }
 
 
@@ -1267,7 +1310,7 @@ hr {
         width: 50%;
     }
     
-    /*Services*/
+/*Services*/
     .services__item {
         width: 100%;
         padding-left: 55px;
@@ -1276,6 +1319,37 @@ hr {
     
     .services__icon {
         left: 0;
+    }
+    
+    .section--devices {
+        padding-bottom: 0;
+    }
+    
+/*Wedo*/
+    .wedo__img {
+        display: none;
+    }
+    
+    .wedo__item {
+        width: 100%;
+    }
+    
+    /*Reviews*/
+    .reviews__photo {
+        position: static;
+        margin: 0 auto 20px;
+    }
+    
+    .reviews__item {
+        padding-left: 0;
+    }
+    
+    .reviews__text {
+        font-size: 16px;
+    }
+    
+    .reviews__author {
+        font-size: 20px;
     }
 }
 
@@ -1324,6 +1398,40 @@ hr {
 
     .stat__count {
         font-size: 50px;
+    }
+    
+/*Devices*/
+    .devices {
+        max-width: 320px;
+    }
+    
+    .devices__item--iphone {
+        width: 180px;
+        bottom: -50px;
+        right: -80px;
+    }
+    
+/*Reviews*/
+    .reviews {
+        padding: 0;
+    }
+    
+    .reviews__btn {
+        top: 18%;
+    }
+/*    logos*/
+    .logos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .logos__item {
+        width: 50%;
+        margin-bottom: 20px;
+    }
+    
+    .logos__img {
+        margin: 0 auto;
     }
 }
 
