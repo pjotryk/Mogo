@@ -1,14 +1,30 @@
-/*jslint browser: true*/
-/*global $, jQuery, alert, console*/
+/*global $, console*/
 
 $(function () {
   "use strict";
+  var header = $("#header"),
+    introH = $("#intro").innerHeight(),
+    scrollOffset = $(window).scrollTop();
+  
+  checkScroll(scrollOffset);
+  
   $(window).on("scroll", function () {
-    var introH = $("#intro").innerHeight();
-   
+    
+    scrollOffset = $(this).scrollTop();
+    
+    checkScroll(scrollOffset);
+    
+//    console.log(scrollOffset, "/", introH);
    
   });
-  if (window.console) {
-    console.log("your message");
+  
+  function checkScroll(scrollOffset) {
+    
+    if (scrollOffset >= introH) {
+      header.addClass("fixed");
+    } else {
+      header.removeClass("fixed");
+    }
   }
+  
 });

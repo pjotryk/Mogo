@@ -111,6 +111,8 @@ hr {
 }
 
 .header.fixed {
+    padding: 10px 0;
+  
     background-color: #e98b83;
     
     position: fixed;
@@ -198,11 +200,16 @@ hr {
     
     border: 0;
     background: none;
+    cursor: pointer;
     
     position: absolute;
     top: 24px;
     right: 24px;
     z-index: 1;
+}
+
+.nav__toogle:focus {
+    outline: 0;
 }
 
 .nav__toogle--item {
@@ -1417,7 +1424,7 @@ hr {
     
     /*Header*/
     .header {
-        padding: 10px 0
+        padding: 10px 0;
     }
     
     
