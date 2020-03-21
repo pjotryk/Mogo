@@ -5,11 +5,14 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="stylesheet" href = "assets/css/style.css">
         <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto:300i,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         
         <script src="https://kit.fontawesome.com/9345b42f8b.js" crossorigin="anonymous"></script>
         
          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
          <script src="assets/js/app.js"></script>
+       
+           <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
          
         <title>MOGO</title>
     </head>
@@ -44,6 +47,7 @@
    
     
        <div class="page">
+       <!-- Intro -->
         <div class="intro" id="intro">
             <div class="container">
                 <div class="intro__inner">
@@ -70,7 +74,7 @@
              </div>             
         </div>
         
-        <!--About-->
+        <!-- About -->
         <section class="section" id="about">
             <div class="container">
                 <div class="section__header">
@@ -225,27 +229,27 @@
                     </div>
                     <div class="wedo__item">
                         <div class="accordion">
-                            <div class="accordion__item active">
-                                <div class="accordion__header">
+                            <div class="accordion__item" data-collapse="#wedo_1">
+                                <div class="accordion__header" >
                                     <img class="accordion__icon" src="assets/images/wedo/2.png">
                                     <div class="accordion__title">photography</div>
                                 </div>
-                                <div class="accordion__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                <div class="accordion__content" id="wedo_1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                             </div>
                             
-                            <div class="accordion__item">
-                                 <div class="accordion__header">
+                            <div class="accordion__item" data-collapse="#wedo_2">
+                                 <div class="accordion__header" >
                                      <img class="accordion__icon" src="assets/images/wedo/3.png">
                                     <div class="accordion__title">creativity</div>
                                 </div>
-                                <div class="accordion__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                <div class="accordion__content" id="wedo_2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                             </div>
-                            <div class="accordion__item">
-                                 <div class="accordion__header">
+                            <div class="accordion__item" data-collapse="#wedo_3" >
+                                 <div class="accordion__header" >
                                      <img class="accordion__icon" src="assets/images/wedo/4.png">
                                     <div class="accordion__title">web design</div>
                                 </div>
-                                <div class="accordion__content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                                <div class="accordion__content" id="wedo_3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                             </div>
                         </div> <!--Accordion-->
                     </div> <!--Wedo__item-->
@@ -259,17 +263,36 @@
             <div class="container">
                
                 <div class="reviews">
-                   <a class="reviews__btn reviews__btn--prev" >Prev</a>
+<!--
+                   <a class="reviews__btn reviews__btn--prev">Prev</a>
                    <a class="reviews__btn reviews__btn--next" href="#">Next</a>
+-->
                    
-                    <div class="reviews__item">
-                       <img class="reviews__photo" src="assets/images/wedo/citata.png" alt="">
-                       <div class="reviews__text">
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                   <div data-slider>
+                     <div>
+                        <div class="reviews__item">
+                           <img class="reviews__photo" src="assets/images/wedo/citata.png" alt="">
+                           <div class="reviews__text">
+                                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+                            </div>
+                            <div class="reviews__author">
+                                John Doe
+                            </div>
                         </div>
-                        <div class="reviews__author">
-                            John Doe
+                      </div>
+                       
+                        <div>
+                          <div class="reviews__item">
+                           <img class="reviews__photo" src="assets/images/wedo/citata.png" alt="">
+                           <div class="reviews__text">
+                                “Ipsum dolor sit amet, consectetur adipiscing , sed do eiusmod tempor  ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud exercitation.”
+                            </div>
+                            <div class="reviews__author">
+                                Petro Kharchenko
+                            </div>
+                           </div>
                         </div>
+                      
                     </div>
                 </div>
             </div>
@@ -501,16 +524,32 @@
             <div class="container">
                
                 <div class="reviews">
-                    <a class="reviews__btn  reviews__btn--prev" href="#">Prev</a>
-                    <a class="reviews__btn  reviews__btn--next" href="#">Next</a>
-                    <div class="reviews__item">
-                       <img class="reviews__photo" src="assets/images/works/avatar.png" alt="">
-                       <div class="reviews__text">
-                            “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
-                        </div>
-                        <div class="reviews__author">Joshua Earle</div>
+                   
+                   <div data-slider>
+                    	<div>
+                    	 	 <div class="reviews__item">
+															<img class="reviews__photo" src="assets/images/works/avatar.png" alt="">
+															<div class="reviews__text">
+																	 “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+															 </div>
+															 <div class="reviews__author">Joshua Earle</div>
+                    	 	  </div>
+                    	 </div>
+                    	 
+                    	 <div>
+                    	 	 <div class="reviews__item">
+															<img class="reviews__photo" src="assets/images/works/avatar.png" alt="">
+															<div class="reviews__text">
+																	 “Ipsum dolor sit amet, consectetur  elit, sed do eiusmod tempor incididunt et  magna aliqua. Ut enim ad minim veniam, quis nostrud .”
+															 </div>
+															 <div class="reviews__author">Terl Cabbot </div>
+                    	 	  </div>
+                    	 </div>
+                    	 
                     </div>
+                    
                 </div>
+                
             </div>
         </div>
         
