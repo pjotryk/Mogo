@@ -240,13 +240,15 @@ hr {
 }
 
 .nav__toogle.active .nav__toogle--item::before {
-    transform-origin: left top;
-    transform: rotate(45deg) translate3d(0px, -3px, 0);
+    transform-origin: center;
+    transform: translateY(8px) rotate(45deg);
+    
 }
 
 .nav__toogle.active .nav__toogle--item::after {
-    transform-origin: left bottom;
-    transform: rotate(-45deg) translate3d(0px, 3px, 0);
+    transform-origin: center;
+    transform: translateY(-8px) rotate(-45deg);
+    
 }
 
 
