@@ -55,4 +55,26 @@ $(function () {
   });
   
   
+  
+  /*Collapse*/
+  $("[data-collapse]").on("click", function(event) {
+    event.preventDefault();
+    
+     var $this = $(this),
+        blockId = $this.data('collapse');
+    $(blockId).slideToggle();
+    
+     $(this).toggleClass("active");
+  });
+  
+  
+  /*Sllider*/
+  $("[data-slider]").slick ({
+    infinity: true,
+    fade: false,
+    slidesToShow: 1, 
+    slidesToScroll: 1
+  });
+  
+  
 });
