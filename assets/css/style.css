@@ -194,8 +194,8 @@ hr {
     color: #fce38a;
 }
 
-/*nav__toogle*/
-.nav__toogle {
+/*nav__toggle*/
+.nav__toggle {
     width: 30px;
     padding: 10px 0;
     display: none;
@@ -213,11 +213,11 @@ hr {
     z-index: 1;
 }
 
-.nav__toogle:focus {
+.nav__toggle:focus {
     outline: 0;
 }
 
-.nav__toogle--item {
+.nav__toggle--item {
     display: block;
     width: 100%;
     height: 3px;
@@ -234,24 +234,24 @@ hr {
     transition: background .3s linear;
 }
 
-.nav__toogle.active .nav__toogle--item {
+.nav__toggle.active .nav__toggle--item {
     
     background: none;
 }
 
-.nav__toogle.active .nav__toogle--item::before {
+.nav__toggle.active .nav__toggle--item::before {
     transform-origin: center;
-    transform: translateY(-8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
 }
 
-.nav__toogle.active .nav__toogle--item::after {
+.nav__toggle.active .nav__toggle--item::after {
     transform-origin: center;
     transform: translateY(-8px) rotate(-45deg)
 }
 
 
-.nav__toogle--item::before,
-.nav__toogle--item::after {
+.nav__toggle--item::before,
+.nav__toggle--item::after {
     content: "";
     width: 100%;
     height: 3px;
@@ -265,11 +265,11 @@ hr {
     transition: transform .3s linear ;
 }
 
-.nav__toogle--item::before {
+.nav__toggle--item::before {
     top: -8px;
 }
 
-.nav__toogle--item::after {
+.nav__toggle--item::after {
     bottom: -8px;
 }
 
@@ -1468,9 +1468,11 @@ hr {
       margin: 0;
       padding: 8px 20px;
     }
+		
+		
     
-    /*Toogle*/
-    .nav__toogle {
+    /*Toggle*/
+    .nav__toggle {
         display: block;
     }
 
