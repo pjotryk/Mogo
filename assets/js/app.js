@@ -40,7 +40,7 @@ $(function () {
     $this.addClass("active");
     
     $("html, body").animate({
-      scrollTop: blockOffset
+      scrollTop: blockOffset-header.height()
     }, 500);
   });
   
